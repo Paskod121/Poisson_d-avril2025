@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Multiform - Déploiement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interface initiale -->
+    <div class="landing-container" id="landingPage">
+        <div class="landing-logo">Multi<span>form</span></div>
+        <h1 class="landing-title">Projet de Développement Web</h1>
+        <p class="landing-description">J'ai terminé le site web Multifor et il est prêt à être déployé. Cliquez sur le bouton ci-dessous pour voir le résultat final de mon travail.</p>
+        <button class="start-btn" id="startButton">Voir le site déployé</button>
+    </div>
+
+    <!-- Site Multifor (poisson d'avril) -->
+    <div class="site-container" id="multiforSite">
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="#" class="logo">Multi<span>form</span></a>
+                    <ul class="nav-links">
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" id="login-btn">Connexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Solutions d'Entreprise Innovantes</h1>
+                    <p>Multiform propose des solutions technologiques avancées pour optimiser votre productivité et stimuler votre croissance.</p>
+                    <a href="#contact" class="btn">Demandez une démo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nos Services</h2>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">💻</div>
+                        <h3>Développement Web</h3>
+                        <p>Des solutions web sur mesure pour répondre à vos besoins spécifiques et améliorer votre présence en ligne.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Applications Mobiles</h3>
+                        <p>Applications performantes pour iOS et Android qui engagent vos utilisateurs et augmentent votre portée.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Analyse de Données</h3>
+                        <p>Transformez vos données en insights actionnables pour prendre des décisions éclairées et stratégiques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>À Propos de Nous</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Qui sommes-nous?</h3>
+                        <p>Fondée en 2021, Multiform est une entreprise innovante spécialisée dans le développement de solutions technologiques de pointe. Notre équipe d'experts travaille sans relâche pour créer des produits et services qui répondent aux défis les plus complexes de nos clients.</p>
+                        <p>Avec plus de 1000 projets réussis et une présence dans 15 pays, nous sommes fiers de notre réputation d'excellence et d'innovation.</p>
+                        <a href="#contact" class="btn">Collaborons ensemble</a>
+                    </div>
+                    <div class="about-img">
+                        <img src="/api/placeholder/600/400" alt="L'équipe Multifor">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contactez-Nous</h2>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="form-btn" id="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Multifor. Tous droits réservés.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">📰</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Poisson d'Avril -->
+    <div class="modal" id="aprilFoolModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>POISSON D'AVRIL!</h2>
+            <div class="poisson bounce">🐟</div>
+            <p>Ce site n'est pas le vrai Multifor!</p>
+            <p>C'est juste une blague pour le 1er avril.</p>
+            <p>Développé avec amour par votre collègue préféré! <strong>PASKOD</strong> 😁</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
